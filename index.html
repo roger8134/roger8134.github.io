@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang ="zh-tw">
+    <head>
+    <meta charset="utf-8">
+    <title>0713hw</title>
+    <link rel="stylesheet" href="p.css" type="text/css">
+        <style>
+            .containerA{
+                display: grid;
+                background-color:darkgray;
+                grid-template-columns: 20px 20px 20px;
+                grid-template-rows: 10px 10px 10px ;
+                height: 50px;
+                width: 150px;
+                padding-left: 10px;
+                padding-top: 10px;
+                position: static;
+                border-radius: 5px;
+            }
+            .containerB{
+                display: grid;
+                background-color: darkgray;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                height: 50px;
+                width: 50px;
+                padding-left: 10px;
+                padding-top: 10px;
+                position: relative;
+                bottom: 60px;
+                left: 300px;
+                border-radius: 5px;
+                
 
+            }
+            .containerC{
+                display: grid;
+                background-color: darkgray;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                padding-left: 10px;
+                padding-top: 10px;
+                position: relative;
+                bottom: 50px;
+                height: 150px;
+                width: 90px;
+                border-radius: 5px;
+            }
+            .containerD{
+                display: grid;
+                background-color: darkgray;
+                grid-template-columns: 50px 20px 110px;
+                grid-template-rows: 50px 50px;
+                grid-template-areas: 
+                                    "E F F"
+                                    "E K G";
+                padding-left: 10px;
+                padding-top: 10px;
+                height: 110px;
+                width: 200px;
+                position: relative;
+                bottom: 190px;
+                left: 125px;
+                border-radius: 5px;
+            }
+            .itemE{
+                grid-area: E;
+                padding-left: 10px;
+                padding-top: 10px;
+                background:lightgray;
+                border-radius: 5px;
+            }
+            .itemF{
+                grid-area: F;
+                padding-left: 10px;
+                padding-top: 10px;
+                background:lightgray;
+                border-radius: 5px;
+            }
+            .itemG{
+                grid-area: G;
+                padding-left: 10px;
+                padding-top: 10px;
+                background:lightgray;
+                border-radius: 5px;
+            }
+            .itemK{
+                
+                grid-area: K;
+                background:darkgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="containerA">
+            <div style="color:white;">A</div>
+        </div>
+        <div class="containerB">
+            <div style="color:white;">B</div>
+        </div>
+        <div class="containerC">
+            <div style="color:white;">C</div>
+        </div>
+        <div class="containerD">
+            <div class="itemE">E</div>
+            <div class="itemF">F</div>
+            <div class="itemG">G</div>
+            <div class="itemK"></div>
+        </div>
+    </body>
+</html>
